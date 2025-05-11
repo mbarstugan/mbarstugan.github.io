@@ -1,4 +1,4 @@
-luat<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -31,20 +31,24 @@ luat<!DOCTYPE html>
     h2 {
       font-size: 28px;
       margin-top: 40px;
+      text-align: center;
     }
     p {
       font-size: 18px;
       line-height: 1.6;
     }
-    .video-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    .centered-text {
+      text-align: center;
     }
-    .video-gallery iframe {
+    .video-section {
+      margin-bottom: 40px;
+    }
+    iframe {
       width: 100%;
-      max-width: 500px;
-      height: 280px;
+      max-width: 560px;
+      height: 315px;
+      display: block;
+      margin: 10px auto 0 auto;
     }
   </style>
 </head>
@@ -52,25 +56,35 @@ luat<!DOCTYPE html>
 
 <header>
   <h1>Improving Long-Horizon Task Learning in Robots Using ACT and Task Decomposition</h1>
-  <p><strong>Authors:</strong> Mücahid Barstuğan, Shimpei Masuda, Ryusuke Sagawa, and Fumio Kanehiro</p>
+  <p>Mücahid Barstuğan, Shimpei Masuda, Ryusuke Sagawa, and Fumio Kanehiro</p>
 </header>
 
 <section>
   <h2>ABSTRACT</h2>
-  <p>Imitation learning is widely used to teach robots everyday tasks. Unlike standard pick-and-place or assembly operations in factories, daily tasks often involve long-term dependencies, making them more complex to learn. Successfully training robots for such long-horizon tasks requires collecting many demonstrations, which in turn demands significant human effort and time resources. Moreover, traditional imitation learning methods often struggle to capture these long-term dependencies effectively. In this study, we focused on teaching three long-horizon tasks (ziploc opening, pouring a cup, and object picking) to robot system by using small amount of data. We used the bimanual teleoperation system (ALOHA) to collect high-quality demonstrations. Two different dataset were collected for each task. Both was trained with two different training approaches (train once, progressive training) by using Action Chunking with Transformers (ACT), a state-of-the-art imitation learning method capable of capturing long-term dependencies. The first dataset contained the entire long-horizon task with a large amount of data, while the second dataset was created by task dividing, resulting in two smaller dataset. The performances of two approaches were compared on both dataset. Experimental results indicate that the proposed training approach enhances robots’ ability to learn and perform daily tasks with a small amount of data.</p>
+  <p class="centered-text">Imitation learning is widely used to teach robots everyday tasks. Unlike standard pick-and-place or assembly operations in factories, daily tasks often involve long-term dependencies, making them more complex to learn. Successfully training robots for such long-horizon tasks requires collecting many demonstrations, which in turn demands significant human effort and time resources. Moreover, traditional imitation learning methods often struggle to capture these long-term dependencies effectively. In this study, we focused on teaching three long-horizon tasks (ziploc opening, pouring a cup, and object picking) to robot system by using small amount of data. We used the bimanual teleoperation system (ALOHA) to collect high-quality demonstrations. Two different dataset were collected for each task. Both was trained with two different training approaches (train once, progressive training) by using Action Chunking with Transformers (ACT), a state-of-the-art imitation learning method capable of capturing long-term dependencies. The first dataset contained the entire long-horizon task with a large amount of data, while the second dataset was created by task dividing, resulting in two smaller dataset. The performances of two approaches were compared on both dataset. Experimental results indicate that the proposed training approach enhances robots’ ability to learn and perform daily tasks with a small amount of data.</p>
 
   <h2>Evaluation Videos</h2>
-  <div class="video-gallery">
-    <h2>ZipLoc Opening</h2>
-    <iframe src="https://www.youtube.com/embed/jFJGdfSg0vY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>Cup Pouring</h2>
-    <iframe src="https://www.youtube.com/embed/DjKtxG-PxdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>Double Insertion</h2>
-    <iframe src="https://www.youtube.com/embed/x4AgQnnzJMg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>Object Picking</h2>
-    <iframe src="https://www.youtube.com/embed/U1patJlzQJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+
+  <div class="video-section">
+    <h3>ZipLoc Opening</h3>
+    <iframe src="https://www.youtube.com/embed/jFJGdfSg0vY" frameborder="0" allowfullscreen></iframe>
   </div>
+
+  <div class="video-section">
+    <h3>Cup Pouring</h3>
+    <iframe src="https://www.youtube.com/embed/DjKtxG-PxdQ" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-section">
+    <h3>Double Insertion</h3>
+    <iframe src="https://www.youtube.com/embed/x4AgQnnzJMg" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-section">
+    <h3>Object Picking</h3>
+    <iframe src="https://www.youtube.com/embed/U1patJlzQJ0" frameborder="0" allowfullscreen></iframe>
+  </div>
+
 </section>
 
 </body>
