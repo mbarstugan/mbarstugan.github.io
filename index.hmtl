@@ -2,10 +2,71 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Benim Sitem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improving Long-Horizon Task Learning in Robots Using ACT and Task Decomposition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 28px;
+      margin-top: 40px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .video-gallery iframe {
+      width: 100%;
+      max-width: 500px;
+      height: 280px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Merhaba Dünya!</h1>
-  <p>GitHub Pages ile ilk web sitem yayında 🎉</p>
+
+<header>
+  <h1>Improving Long-Horizon Task Learning in Robots Using ACT and Task Decomposition</h1>
+  <p><strong>Yazarlar:</strong> Mücahid Barstuğan, Shimpei Masuda, Ryusuke Sagawa, and Fumio Kanehiro</p>
+</header>
+
+<section>
+  <h2>Özet</h2>
+  <p><strong>ABSTRACT:</strong> Imitation learning is widely used to teach robots everyday tasks. Unlike standard pick-and-place or assembly operations in factories, daily tasks often involve long-term dependencies, making them more complex to learn. Successfully training robots for such long-horizon tasks requires collecting many demonstrations, which in turn demands significant human effort and time resources. Moreover, traditional imitation learning methods often struggle to capture these long-term dependencies effectively. In this study, we focused on teaching three long-horizon tasks (ziploc opening, pouring a cup, and object picking) to robot system by using small amount of data. We used the bimanual teleoperation system (ALOHA) to collect high-quality demonstrations. Two different dataset were collected for each task. Both was trained with two different training approaches (train once, progressive training) by using Action Chunking with Transformers (ACT), a state-of-the-art imitation learning method capable of capturing long-term dependencies. The first dataset contained the entire long-horizon task with a large amount of data, while the second dataset was created by task dividing, resulting in two smaller dataset. The performances of two approaches were compared on both dataset. Experimental results indicate that the proposed training approach enhances robots’ ability to learn and perform daily tasks with a small amount of data.</p>
+
+  <h2>Videolar</h2>
+  <div class="video-gallery">
+    <iframe src="https://www.youtube.com/embed/jFJGdfSg0vY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/x4AgQnnzJMg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/U1patJlzQJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/DjKtxG-PxdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+
 </body>
 </html>
